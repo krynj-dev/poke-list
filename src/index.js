@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
   </React.StrictMode>,
   document.getElementById('root')
 );
