@@ -1,24 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import Poketable from './components/Poketable';
+import Berrytable from './components/Berrytable';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Poketable />
+        <div className="App-dashboard">
+          <div className="App-pokemon"><Poketable/></div>
+          <div className="App-berry"><Berrytable/></div>
+        </div>
       </header>
     </div>
   );

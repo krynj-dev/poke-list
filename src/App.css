@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-dashboard {
+  display: grid;
+  grid-template-areas:  "a b"
+                        "a c";
+  height: 100%;
+  overflow: hidden;
+}
+
+.App-pokemon {
+  grid-area: a;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.App-berry {
+  grid-area: b;
 }
