@@ -45,7 +45,6 @@ class Berrytable extends React.Component {
     }
 
     get_berry_list() {
-        console.log(this.state)
         if(this.state.berrylist !== undefined) {
             return(this.state.berrylist.map((val, idx) => {
                 return(<tr key={idx}>

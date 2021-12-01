@@ -42,7 +42,10 @@
   grid-template-areas:  "a b"
                         "a c";
   height: 100%;
+  width: 100%;
   overflow: hidden;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 40% auto;
 }
 
 .App-pokemon {
@@ -53,4 +56,10 @@
 
 .App-berry {
   grid-area: b;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.App-stats {
+  grid-area: c;
 }
